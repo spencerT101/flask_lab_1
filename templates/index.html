@@ -8,11 +8,10 @@
 </head>
 <body>
     <h1>Customer Orders List:</h1>
+    <ol>
     {% for customer in customers %}
-    <div>
-        <p>{{customer.name}}: {{customer.description}} </p>
-    </div>
+       <li> {{customer.customer_name}}: {{customer.description}} </li>
     {% endfor %}
-
+    <ol>
 </body>
 </html>
