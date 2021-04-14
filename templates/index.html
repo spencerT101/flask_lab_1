@@ -10,9 +10,9 @@
     <h1>Customer Orders List:</h1>
     {% for customer in customers %}
     <div>
-        <p></p>
+        <p>{{customer.name}}: {{customer.description}} </p>
     </div>
+    {% endfor %}
 
-    
 </body>
 </html>
