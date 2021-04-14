@@ -10,7 +10,7 @@
     <h1>Customer Orders List:</h1>
     <ol>
     {% for customer in customers %}
-       <li> {{customer.customer_name}}: {{customer.description}} </li>
+       <li> {{customer.customer_name}}: <a href="customers/{{loop.index -1}}">go to order</a></li></li>
     {% endfor %}
     <ol>
 </body>
